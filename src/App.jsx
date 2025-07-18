@@ -12,7 +12,7 @@ const App = () => {
 
   const fetchTasks = async () => {
     try {
-      const response = await axios.get('http://localhost:3000');
+      const response = await axios.get('https://task-tracker-backend-1-muoo.onrender.com/');
       console.log(response.data);
       setTasks(response.data); // ✅ This line should NOT be commented
     } catch (err) {
@@ -23,7 +23,7 @@ const App = () => {
   const handleAdd = async () => {
     if (!val.trim()) return;
     try {
-      await axios.post('http://localhost:3000', { task: val });
+      await axios.post('https://task-tracker-backend-1-muoo.onrender.com/', { task: val });
       setval('');
       fetchTasks(); // ✅ Refresh task list
     } catch (err) {
@@ -33,7 +33,7 @@ const App = () => {
 
   const deleteTask = async (id) => {
   try {
-    await axios.delete(`http://localhost:3000/${id}`);
+    await axios.delete(`https://task-tracker-backend-1-muoo.onrender.com/${id}`);
     // Optional: update state after delete
     setTasks(tasks.filter(task => task._id !== id));
   } catch (err) {
