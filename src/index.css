@@ -27,7 +27,9 @@ color: white;
   justify-content: space-evenly;
   align-items: center;
 }
-
+  .top{
+       background-color: rgba(128, 128, 128, 0.288);
+    }
 @media (max-width:700px) {
     .all{
       flex-direction: column;
@@ -40,6 +42,7 @@ color: white;
         width: 100%;
         /* margin-top: 35px; */
     }
+  
     .t{
       /* background-color: red; */
       overflow: visible;

@@ -4,7 +4,7 @@ import { Typewriter } from 'react-simple-typewriter';
 
 const Head = () => {
   return (
-    <div className='flex justify-center items-center gap-2 bg-black h-[10%]'>
+    <div className=' top flex justify-center items-center gap-2 bg-black h-[10%]'>
       <h1 className='text-[clamp(2.3rem,3.5vw,5rem)] font-black bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent my-20'>
         <Typewriter
           words={['Task Tracker ']}
