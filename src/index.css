@@ -6,6 +6,27 @@ html, body, #root {
   background-color: black;
 }
 
+.add-task{
+  background-color: rgba(128, 128, 128, 0.288);
+  border-radius: 10px;
+  backdrop-filter: blue(10px);
+  margin-top: 30px;
+  height: 80%;
+  width: 45%;
+}
+.btn{
+ background: linear-gradient(to right, #5B2EFF, #EC4899);
+
+color: white;
+}
+.rht{
+  padding-top:30px;
+}
+.all{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
 
 @media (max-width:700px) {
     .all{
